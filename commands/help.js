@@ -14,12 +14,12 @@ module.exports = {
         
         let i = 0;
         commands.forEach((cmd, name) => {
-            message += `「 ${++i} 」${prefix}${name}\n`;
+            message += `➪ ${++i} ${prefix}${name}\n`;
         });
 
         const pageCount = 1; // Adjust this if you have pagination
 
-        const pageText = `\n\n𝗣𝗔𝗚𝗘 »${pageCount}/${pageCount}«`;
+        const pageText = `\n\n𝗣𝗔𝗚𝗘 :[${page}/${Math.ceil(commands.length / pages)}] ...\n━━━━━━━━━━━\n[🆔]𝗔𝗨𝗧𝗢𝗕𝗢𝗧 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗕𝗬 : 𝗢𝗟𝗜𝗩𝗘𝗥|𝗚𝗔𝗕𝗥𝗜𝗘𝗟🏅\n[🗝️]▪𝗟𝗜𝗡𝗞-𝗙𝗕 :https://www.facebook.com/\n[⚙️]𝗟𝗜𝗡𝗞 𝗔𝗨𝗧𝗢𝗕𝗢𝗧 :https://Autobot-gabriel.onrender.com/ `;
 
         message += pageText;
 
